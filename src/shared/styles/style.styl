@@ -1,0 +1,50 @@
+$white = #fff
+$black = #000
+$border = #e6e6e6
+$width = 800px
+
+*, *:before, *:after
+  box-sizing: border-box
+  -webkit-appearance: none
+
+first_mt0()
+  > :first-child
+    margin-top 0
+
+
+@import './_mixin/reset'
+@import './_mixin/static'
+@import './_mixin/thema'
+@import './_mixin/layout'
+@import './_mixin/module'
+
+// ページ特有
+
+.sample-grid
+  .column
+    padding 10px
+    border 1px solid $border
+    border-radius 5px
+    background #eee
+
+// 横並びpx指定
+
+// .media-box
+.media-image
+  width 470px
+.media-text
+  width 350px
+
+// .media-caption-box
+.media-caption-image
+  width 220px
+.media-caption-text
+  width 600px
+
+@media screen and (max-width: 760px) 
+  .header
+    img
+      width auto
+      max-width 150px
+  img
+    width 100%

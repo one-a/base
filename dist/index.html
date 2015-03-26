@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <title>base file</title>
+    <link rel="stylesheet" href="/shared/styles/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="inner">
+          <p><img src="/images/logo.gif" alt="" width="150"/></p>
+        </div>
+      </div>
+      <div class="main">
+        <div class="contents">
+          <h1 class="h1-def">base template</h1>
+          <h2 class="h2-def">description</h2>
+          <div class="box">
+            <p>必要そうなものを入れているだけのベース</p>
+          </div>
+          <h3 class="h3-def">開発環境</h3>
+          <div class="box">
+            <p>gulp + jade + stylus + coffeescript</p>
+          </div>
+          <h3 class="h3-def">CSSファイル構成</h3>
+          <div class="box">
+            <table class="table-def">
+              <colgroup>
+                <col class="w30per">
+                <col class="w70per">
+              </colgroup>
+              <tr>
+                <th>/shared/styles/_mixin/reset</th>
+                <td>normalize.cssをそのまま入れている</td>
+              </tr>
+              <tr>
+                <th>/shared/styles/_mixin/static</th>
+                <td>便利なCSS</td>
+              </tr>
+              <tr>
+                <th>/shared/styles/_mixin/thema</th>
+                <td>bodyやaなど全体にかかる色などの調整</td>
+              </tr>
+              <tr>
+                <th>/shared/styles/_mixin/layout</th>
+                <td>レイアウト。containerやheader、footerなどの配置</td>
+              </tr>
+              <tr>
+                <th>/shared/styles/_mixin/module</th>
+                <td>モジュール集</td>
+              </tr>
+              <tr>
+                <th>/shared/styles/style.stylus</th>
+                <td>変数、ページ固有のCSS</td>
+              </tr>
+            </table>
+          </div>
+          <h3 class="h3-def">ルール</h3>
+          <div class="box">
+            <ul class="list-def">
+              <li>命名の区切りはハイフン</li>
+              <li>基本的に&lt;div class="box"&gt;で囲む</li>
+            </ul>
+          </div>
+          <h2 class="h2-def">text</h2>
+          <div class="box">
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="bold">強調</p>
+            <p class="attention">赤字強調</p>
+          </div>
+          <h3 class="h3-def">headings</h3>
+          <h4 class="h4-def">h4見出し</h4>
+          <h5 class="h5-def">h5見出し</h5>
+          <h6 class="h6-def">h6見出し</h6>
+          <h3 class="h3-def">notes</h3>
+          <div class="box">
+            <p class="notes">※注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト</p>
+            <ul class="notes-list">
+              <li>※注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト</li>
+              <li>※注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト</li>
+              <li>※注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト</li>
+              <li>※注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト</li>
+            </ul>
+          </div>
+          <h3 class="h3-def">list</h3>
+          <div class="box">
+            <ul class="list-def">
+              <li>リスト</li>
+              <li>リスト</li>
+              <li>リスト</li>
+              <li>リスト</li>
+            </ul>
+            <ol class="list-def">
+              <li>リスト</li>
+              <li>リスト</li>
+              <li>リスト</li>
+              <li>リスト</li>
+            </ol>
+            <ul class="nomark-list">
+              <li>リスト</li>
+              <li>リスト</li>
+              <li>リスト</li>
+              <li>リスト</li>
+            </ul>
+            <ol class="nomark-list">
+              <li>リスト</li>
+              <li>リスト</li>
+              <li>リスト</li>
+              <li>リスト</li>
+            </ol>
+          </div>
+          <h3 class="h3-def">link</h3>
+          <div class="box">
+            <p><a href="">リンクテキストリンクテキストリンクテキストリンクテキスト</a></p>
+          </div>
+          <h3 class="h3-def">table</h3>
+          <table class="table-def">
+            <colgroup>
+              <col class="w30per">
+              <col class="w20per">
+              <col class="w20per">
+              <col class="w20per">
+            </colgroup>
+            <tr>
+              <th>&nbsp;</th>
+              <th>見出し</th>
+              <th>見出し</th>
+              <th>見出し</th>
+            </tr>
+            <tr>
+              <th>見出し</th>
+              <td>テキストテキストテキストテキスト</td>
+              <td>テキストテキストテキストテキスト</td>
+              <td>テキストテキストテキストテキスト</td>
+            </tr>
+            <tr>
+              <th>見出し</th>
+              <td>テキストテキストテキストテキスト</td>
+              <td>テキストテキストテキストテキスト</td>
+              <td>テキストテキストテキストテキスト</td>
+            </tr>
+            <tr>
+              <th>見出し</th>
+              <td>テキストテキストテキストテキスト</td>
+              <td>テキストテキストテキストテキスト</td>
+              <td>テキストテキストテキストテキスト</td>
+            </tr>
+            <tr>
+              <th>見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し</th>
+              <td>テキストテキストテキストテキスト</td>
+              <td>テキストテキストテキストテキスト</td>
+              <td>テキストテキストテキストテキストテキスト</td>
+            </tr>
+          </table>
+          <h2 class="h2-def">grid</h2>
+          <div class="box">
+            <div class="columns sample-grid">
+              <div class="column column-1of4">.column.column-1of4</div>
+              <div class="column column-1of2">.column.column-1of2</div>
+              <div class="column column-1of4">.column.column-1of4</div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="columns sample-grid">
+              <div class="column column-1of2">.column.column-1of2</div>
+              <div class="column column-1of3">.column.column-1of3</div>
+              <div class="column column-1of4">.column.column-1of4</div>
+              <div class="column column-1of5">.column.column-1of5</div>
+              <div class="column column-2of5">.column.column-2of5</div>
+              <div class="column column-3of5">.column.column-3of5</div>
+              <div class="column column-2of3">.column.column-2of3</div>
+              <div class="column column-3of4">.column.column-3of4</div>
+              <div class="column column-4of5">.column.column-4of5</div>
+            </div>
+          </div>
+          <h2 class="h2-def">横並び</h2>
+          <h3 class="h3-def">横並び（float）</h3>
+          <div class="box columns row-columns">
+            <div class="column column-1of2">
+              <div class="column-inner"><img src="http://dummyimage.com/390x200/999/fff" alt=""></div>
+            </div>
+            <div class="column column-1of2">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+          <div class="box columns row-columns">
+            <div class="column column-1of2">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="column column-1of2">
+              <div class="column-inner"><img src="http://dummyimage.com/390x200/999/fff" alt=""></div>
+            </div>
+          </div>
+          <div class="box columns row-columns">
+            <div class="column column-1of3">
+              <div class="column-inner"><img src="http://dummyimage.com/253x200/999/fff" alt=""></div>
+            </div>
+            <div class="column column-1of3">
+              <div class="column-inner"><img src="http://dummyimage.com/253x200/999/fff" alt=""></div>
+            </div>
+            <div class="column column-1of3">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+          <div class="box columns row-columns">
+            <div class="column column-1of4">
+              <div class="column-inner"><img src="http://dummyimage.com/185x200/999/fff" alt=""></div>
+            </div>
+            <div class="column column-1of4">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="column column-1of4">
+              <div class="column-inner"><img src="http://dummyimage.com/185x200/999/fff" alt=""></div>
+            </div>
+            <div class="column column-1of4">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+          <h3 class="h3-def">横並び（inline）</h3>
+          <div class="box columns inline-columns">
+            <div class="inline-column column-1of2">
+              <div class="column-inner"><img src="http://dummyimage.com/390x200/999/fff" alt=""></div>
+            </div><!--
+            --><div class="inline-column column-1of2">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="box columns inline-columns">
+            <div class="inline-column column-1of2">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div><!--
+            --><div class="inline-column column-1of2">
+              <div class="column-inner"><img src="http://dummyimage.com/390x200/999/fff" alt=""></div>
+            </div>
+            
+          </div>
+          <div class="box columns inline-columns">
+            <div class="inline-column column-1of3">
+              <div class="column-inner"><img src="http://dummyimage.com/253x200/999/fff" alt=""></div>
+            </div><!--
+            --><div class="inline-column column-1of3">
+              <div class="column-inner"><img src="http://dummyimage.com/253x200/999/fff" alt=""></div>
+            </div><!--
+            --><div class="inline-column column-1of3">
+              <div class="column-inner">
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="box columns inline-columns">
+            <div class="inline-column column-1of4">
+              <div class="column-inner"><img src="http://dummyimage.com/185x200/999/fff" alt=""></div>
+            </div><!--
+            --><div class="inline-column column-1of4">
+              <div class="column-inner">
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div><!--
+            --><div class="inline-column column-1of4">
+              <div class="column-inner"><img src="http://dummyimage.com/185x200/999/fff" alt=""></div>
+            </div><!--
+            --><div class="inline-column column-1of4">
+              <div class="column-inner">
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            
+          </div>
+          <!-- 横並び-->
+          <h3 class="h3-def">横並び（回り込み）</h3>
+          <div class="box columns row-round-columns">
+            <div class="column-round-left column-1of2">
+              <div class="column-inner"><img src="http://dummyimage.com/390x200/999/fff" alt=""></div>
+            </div>
+            <div class="column-text">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+          <div class="box columns row-round-columns">
+            <div class="column-round-right column-1of2">
+              <div class="column-inner"><img src="http://dummyimage.com/390x200/999/fff" alt=""></div>
+            </div>
+            <div class="column-text">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+          <div class="box columns row-round-columns">
+            <div class="column-round-left column-1of3">
+              <div class="column-inner"><img src="http://dummyimage.com/253x200/999/fff" alt=""></div>
+            </div>
+            <div class="column-text">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+          <div class="box columns row-round-columns">
+            <div class="column-round-right column-1of4">
+              <div class="column-inner"><img src="http://dummyimage.com/185x200/999/fff" alt=""></div>
+            </div>
+            <div class="column-text">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+          <h3 class="h3-def">横並び（px指定の場合）</h3>
+          <div class="box">
+            <p>`.column-1of2`などの代わりに、`.media-image`など名前をつける</p>
+          </div>
+          <div class="box columns row-columns media-box">
+            <div class="column media-image">
+              <div class="column-inner"><img src="http://dummyimage.com/450x200/999/fff" alt=""></div>
+            </div>
+            <div class="column media-text">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+          <div class="box columns row-columns media-caption-box">
+            <div class="column media-caption-text">
+              <div class="column-inner">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="column media-caption-image">
+              <div class="column-inner"><img src="http://dummyimage.com/200x200/999/fff" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="inner">
+        <p>footer </p>
+      </div>
+    </div>
+    <script src="/shared/scripts/app.js"></script>
+  </body>
+</html>

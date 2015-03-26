@@ -1,0 +1,414 @@
+extends ./_theme/layout
+include ./_mixin/module
+
+block main
+  .contents
+
+    h1.h1-def base template
+
+    h2.h2-def description
+    .box
+      p 必要そうなものを入れているだけのベース
+
+    h3.h3-def 開発環境
+    .box
+      p gulp + jade + stylus + coffeescript
+
+    h3.h3-def CSSファイル構成
+    .box
+      table.table-def
+        colgroup
+          col.w30per
+          col.w70per
+        tr
+          th /shared/styles/_mixin/reset
+          td normalize.cssをそのまま入れている
+        tr
+          th /shared/styles/_mixin/static
+          td 便利なCSS
+        tr
+          th /shared/styles/_mixin/thema
+          td bodyやaなど全体にかかる色などの調整
+        tr
+          th /shared/styles/_mixin/layout
+          td レイアウト。containerやheader、footerなどの配置
+        tr
+          th /shared/styles/_mixin/module
+          td モジュール集
+        tr
+          th /shared/styles/style.stylus
+          td 変数、ページ固有のCSS
+
+
+    h3.h3-def ルール
+    .box
+      ul.list-def
+        li 命名の区切りはハイフン
+        li 基本的に&lt;div class="box"&gt;で囲む
+
+
+    h2.h2-def text
+    .box
+      p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+      p.bold 強調
+      p.attention 赤字強調
+
+    h3.h3-def headings
+
+    h4.h4-def h4見出し
+    h5.h5-def h5見出し
+    h6.h6-def h6見出し
+
+    h3.h3-def notes
+
+    .box
+      p.notes ※注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト
+
+      ul.notes-list
+        li ※注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト
+        li ※注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト
+        li ※注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト
+        li ※注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト注釈テキスト
+
+    h3.h3-def list
+
+    .box
+      ul.list-def
+        li リスト
+        li リスト
+        li リスト
+        li リスト
+
+      ol.list-def
+        li リスト
+        li リスト
+        li リスト
+        li リスト
+
+      ul.nomark-list
+        li リスト
+        li リスト
+        li リスト
+        li リスト
+
+      ol.nomark-list
+        li リスト
+        li リスト
+        li リスト
+        li リスト
+ 
+ 
+    h3.h3-def link
+
+    .box
+      p
+        a(href="") リンクテキストリンクテキストリンクテキストリンクテキスト
+
+
+    h3.h3-def table
+    table.table-def
+      colgroup
+        col.w30per
+        col.w20per
+        col.w20per
+        col.w20per
+      tr
+        th &nbsp;
+        th 見出し
+        th 見出し
+        th 見出し
+      tr
+        th 見出し
+        td テキストテキストテキストテキスト
+        td テキストテキストテキストテキスト
+        td テキストテキストテキストテキスト
+      tr
+        th 見出し
+        td テキストテキストテキストテキスト
+        td テキストテキストテキストテキスト
+        td テキストテキストテキストテキスト
+      tr
+        th 見出し
+        td テキストテキストテキストテキスト
+        td テキストテキストテキストテキスト
+        td テキストテキストテキストテキスト
+      tr
+        th 見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し
+        td テキストテキストテキストテキスト
+        td テキストテキストテキストテキスト
+        td テキストテキストテキストテキストテキスト
+
+    h2.h2-def grid
+
+    .box
+      .columns.sample-grid
+        .column.column-1of4 .column.column-1of4
+        .column.column-1of2 .column.column-1of2
+        .column.column-1of4 .column.column-1of4
+
+    .box
+      .columns.sample-grid
+        .column.column-1of2 .column.column-1of2
+        .column.column-1of3 .column.column-1of3
+        .column.column-1of4 .column.column-1of4
+        .column.column-1of5 .column.column-1of5
+        .column.column-2of5 .column.column-2of5
+        .column.column-3of5 .column.column-3of5
+        .column.column-2of3 .column.column-2of3
+        .column.column-3of4 .column.column-3of4
+        .column.column-4of5 .column.column-4of5
+
+    h2.h2-def 横並び
+
+    h3.h3-def 横並び（float）
+    .box.columns.row-columns
+      .column.column-1of2
+        .column-inner
+          img(src="http://dummyimage.com/390x200/999/fff" alt="")
+      .column.column-1of2
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    .box.columns.row-columns
+      .column.column-1of2
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      .column.column-1of2
+        .column-inner
+          img(src="http://dummyimage.com/390x200/999/fff" alt="")
+
+    .box.columns.row-columns
+      .column.column-1of3
+        .column-inner
+          img(src="http://dummyimage.com/253x200/999/fff" alt="")
+      .column.column-1of3
+        .column-inner
+          img(src="http://dummyimage.com/253x200/999/fff" alt="")
+      .column.column-1of3
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    .box.columns.row-columns
+      .column.column-1of4
+        .column-inner
+          img(src="http://dummyimage.com/185x200/999/fff" alt="")
+      .column.column-1of4
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      .column.column-1of4
+        .column-inner
+          img(src="http://dummyimage.com/185x200/999/fff" alt="")
+      .column.column-1of4
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    h3.h3-def 横並び（inline）
+
+    //- .box.columns.inline-columns
+    //-   .inline-column.column-1of2
+    //-     .column-inner
+    //-       img(src="http://dummyimage.com/390x200/999/fff" alt="")
+    //-   .inline-column.column-1of2
+    //-     .column-inner
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    .box.columns.inline-columns.
+      <div class="inline-column column-1of2">
+        <div class="column-inner"><img src="http://dummyimage.com/390x200/999/fff" alt=""></div>
+      </div><!--
+      --><div class="inline-column column-1of2">
+        <div class="column-inner">
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+
+    //- .box.columns.inline-columns
+    //-   .inline-column.column-1of2
+    //-     .column-inner
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    //-   .inline-column.column-1of2
+    //-     .column-inner
+    //-       img(src="http://dummyimage.com/390x200/999/fff" alt="")
+
+    .box.columns.inline-columns.
+      <div class="inline-column column-1of2">
+        <div class="column-inner">
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div><!--
+      --><div class="inline-column column-1of2">
+        <div class="column-inner"><img src="http://dummyimage.com/390x200/999/fff" alt=""></div>
+      </div>
+
+    //- .box.columns.inline-columns
+    //-   .inline-column.column-1of3
+    //-     .column-inner
+    //-       img(src="http://dummyimage.com/253x200/999/fff" alt="")
+    //-   .inline-column.column-1of3
+    //-     .column-inner
+    //-       img(src="http://dummyimage.com/253x200/999/fff" alt="")
+    //-   .inline-column.column-1of3
+    //-     .column-inner
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    .box.columns.inline-columns.
+      <div class="inline-column column-1of3">
+        <div class="column-inner"><img src="http://dummyimage.com/253x200/999/fff" alt=""></div>
+      </div><!--
+      --><div class="inline-column column-1of3">
+        <div class="column-inner"><img src="http://dummyimage.com/253x200/999/fff" alt=""></div>
+      </div><!--
+      --><div class="inline-column column-1of3">
+        <div class="column-inner">
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+
+    //- .box.columns.inline-columns
+    //-   .inline-column.column-1of4
+    //-     .column-inner
+    //-       img(src="http://dummyimage.com/185x200/999/fff" alt="")
+    //-   .inline-column.column-1of4
+    //-     .column-inner
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    //-   .inline-column.column-1of4
+    //-     .column-inner
+    //-       img(src="http://dummyimage.com/185x200/999/fff" alt="")
+    //-   .inline-column.column-1of4
+    //-     .column-inner
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    //-       p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    .box.columns.inline-columns.
+      <div class="inline-column column-1of4">
+        <div class="column-inner"><img src="http://dummyimage.com/185x200/999/fff" alt=""></div>
+      </div><!--
+      --><div class="inline-column column-1of4">
+        <div class="column-inner">
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div><!--
+      --><div class="inline-column column-1of4">
+        <div class="column-inner"><img src="http://dummyimage.com/185x200/999/fff" alt=""></div>
+      </div><!--
+      --><div class="inline-column column-1of4">
+        <div class="column-inner">
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+
+    // 横並び
+
+    h3.h3-def 横並び（回り込み）
+    
+    .box.columns.row-round-columns
+      .column-round-left.column-1of2
+        .column-inner
+          img(src="http://dummyimage.com/390x200/999/fff" alt="")
+      .column-text
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    
+    .box.columns.row-round-columns
+      .column-round-right.column-1of2
+        .column-inner
+          img(src="http://dummyimage.com/390x200/999/fff" alt="")
+      .column-text
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    
+    .box.columns.row-round-columns
+      .column-round-left.column-1of3
+        .column-inner
+          img(src="http://dummyimage.com/253x200/999/fff" alt="")
+      .column-text
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    .box.columns.row-round-columns
+      .column-round-right.column-1of4
+        .column-inner
+          img(src="http://dummyimage.com/185x200/999/fff" alt="")
+      .column-text
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    h3.h3-def 横並び（px指定の場合）
+
+    .box
+      p `.column-1of2`などの代わりに、`.media-image`など名前をつける
+
+    .box.columns.row-columns.media-box
+      .column.media-image
+        .column-inner
+          img(src="http://dummyimage.com/450x200/999/fff" alt="")
+      .column.media-text
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+    .box.columns.row-columns.media-caption-box
+      .column.media-caption-text
+        .column-inner
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      .column.media-caption-image
+        .column-inner
+          img(src="http://dummyimage.com/200x200/999/fff" alt="")
+
+
+
+block head
+  link(rel="stylesheet" href="/shared/styles/style.css")
+

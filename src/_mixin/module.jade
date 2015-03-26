@@ -1,0 +1,34 @@
+mixin header()
+  .inner
+    p
+      img(src="/images/logo.gif" alt="" width="150")
+
+mixin footer()
+  .inner
+    p footer 
+
+mixin breadcrumb(args)
+  - var current = args.pop()
+  .breadcrumb
+    each e in args
+      a(href="/")= e
+      span &gt;
+    strong= current
+
+mixin pageNav(baseUrl, prev, next)
+  .nav-page
+    p.prev
+      a(href="#{baseUrl}#{prev}.html")
+        span 前のページ
+
+    - for(var i = 1; i < 11; i++)
+      p.display-wide
+        a(href="#") #{i}
+
+    p.display-narrow 1/10
+
+    p.next
+      a(href="#{baseUrl}#{next}.html")
+        span 次のページ
+
+
